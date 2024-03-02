@@ -93,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				E914866B2B93AB3000F266A5 /* CoffeeWeather */,
+				E914869C2B93AB4D00F266A5 /* CoffeeWeather.entitlements */,
+				E914867A2B93AB3200F266A5 /* Info.plist */,
 				E91486822B93AB3300F266A5 /* CoffeeWeatherTests */,
 				E914868C2B93AB3300F266A5 /* CoffeeWeatherUITests */,
 				E914866A2B93AB3000F266A5 /* Products */,
@@ -118,8 +120,6 @@
 				E914869F2B93B04800F266A5 /* Models */,
 				E914869E2B93B03300F266A5 /* Views */,
 				E914869D2B93B01F00F266A5 /* ViewModels */,
-				E914869C2B93AB4D00F266A5 /* CoffeeWeather.entitlements */,
-				E914867A2B93AB3200F266A5 /* Info.plist */,
 			);
 			path = CoffeeWeather;
 			sourceTree = "<group>";

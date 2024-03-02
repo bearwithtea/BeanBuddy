@@ -13,6 +13,17 @@ class WeatherViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
+        getLocation()
+    }
+    
+    private func getLocation() {
+        LocationManagers.shared.getCurrentLocation { location in
+            print(String(describing: location))
+        }
+    }
+        
+    private func setUpView() {
         view.backgroundColor = .systemBackground
         
         view.addSubview(primaryView)

@@ -10,12 +10,14 @@
 		E914866D2B93AB3000F266A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E914866C2B93AB3000F266A5 /* AppDelegate.swift */; };
 		E914866F2B93AB3000F266A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E914866E2B93AB3000F266A5 /* SceneDelegate.swift */; };
 		E91486712B93AB3000F266A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91486702B93AB3000F266A5 /* ViewController.swift */; };
-		E91486742B93AB3000F266A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91486722B93AB3000F266A5 /* Main.storyboard */; };
 		E91486762B93AB3200F266A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91486752B93AB3200F266A5 /* Assets.xcassets */; };
 		E91486792B93AB3200F266A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91486772B93AB3200F266A5 /* LaunchScreen.storyboard */; };
 		E91486842B93AB3300F266A5 /* CoffeeWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91486832B93AB3300F266A5 /* CoffeeWeatherTests.swift */; };
 		E914868E2B93AB3300F266A5 /* CoffeeWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E914868D2B93AB3300F266A5 /* CoffeeWeatherUITests.swift */; };
 		E91486902B93AB3300F266A5 /* CoffeeWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E914868F2B93AB3300F266A5 /* CoffeeWeatherUITestsLaunchTests.swift */; };
+		E91486A42B93B0FC00F266A5 /* LocationManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91486A32B93B0FC00F266A5 /* LocationManagers.swift */; };
+		E91486A62B93B10600F266A5 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91486A52B93B10600F266A5 /* IAPManager.swift */; };
+		E91486A82B93B11C00F266A5 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91486A72B93B11C00F266A5 /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		E914866C2B93AB3000F266A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E914866E2B93AB3000F266A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E91486702B93AB3000F266A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E91486732B93AB3000F266A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E91486752B93AB3200F266A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E91486782B93AB3200F266A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E914867A2B93AB3200F266A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,10 @@
 		E91486892B93AB3300F266A5 /* CoffeeWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E914868D2B93AB3300F266A5 /* CoffeeWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeWeatherUITests.swift; sourceTree = "<group>"; };
 		E914868F2B93AB3300F266A5 /* CoffeeWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E914869C2B93AB4D00F266A5 /* CoffeeWeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoffeeWeather.entitlements; sourceTree = "<group>"; };
+		E91486A32B93B0FC00F266A5 /* LocationManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagers.swift; sourceTree = "<group>"; };
+		E91486A52B93B10600F266A5 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		E91486A72B93B11C00F266A5 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +104,13 @@
 		E914866B2B93AB3000F266A5 /* CoffeeWeather */ = {
 			isa = PBXGroup;
 			children = (
-				E914866C2B93AB3000F266A5 /* AppDelegate.swift */,
-				E914866E2B93AB3000F266A5 /* SceneDelegate.swift */,
-				E91486702B93AB3000F266A5 /* ViewController.swift */,
-				E91486722B93AB3000F266A5 /* Main.storyboard */,
-				E91486752B93AB3200F266A5 /* Assets.xcassets */,
-				E91486772B93AB3200F266A5 /* LaunchScreen.storyboard */,
+				E91486A22B93B0D300F266A5 /* Managers */,
+				E91486A12B93B05800F266A5 /* Resources */,
+				E91486A02B93B05000F266A5 /* Controllers */,
+				E914869F2B93B04800F266A5 /* Models */,
+				E914869E2B93B03300F266A5 /* Views */,
+				E914869D2B93B01F00F266A5 /* ViewModels */,
+				E914869C2B93AB4D00F266A5 /* CoffeeWeather.entitlements */,
 				E914867A2B93AB3200F266A5 /* Info.plist */,
 			);
 			path = CoffeeWeather;
@@ -125,6 +131,56 @@
 				E914868F2B93AB3300F266A5 /* CoffeeWeatherUITestsLaunchTests.swift */,
 			);
 			path = CoffeeWeatherUITests;
+			sourceTree = "<group>";
+		};
+		E914869D2B93B01F00F266A5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E914869E2B93B03300F266A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E914869F2B93B04800F266A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E91486A02B93B05000F266A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E91486702B93AB3000F266A5 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E91486A12B93B05800F266A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E914866C2B93AB3000F266A5 /* AppDelegate.swift */,
+				E914866E2B93AB3000F266A5 /* SceneDelegate.swift */,
+				E91486752B93AB3200F266A5 /* Assets.xcassets */,
+				E91486772B93AB3200F266A5 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E91486A22B93B0D300F266A5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E91486A32B93B0FC00F266A5 /* LocationManagers.swift */,
+				E91486A52B93B10600F266A5 /* IAPManager.swift */,
+				E91486A72B93B11C00F266A5 /* WeatherManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +289,6 @@
 			files = (
 				E91486792B93AB3200F266A5 /* LaunchScreen.storyboard in Resources */,
 				E91486762B93AB3200F266A5 /* Assets.xcassets in Resources */,
-				E91486742B93AB3000F266A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +313,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91486A82B93B11C00F266A5 /* WeatherManager.swift in Sources */,
+				E91486A42B93B0FC00F266A5 /* LocationManagers.swift in Sources */,
+				E91486A62B93B10600F266A5 /* IAPManager.swift in Sources */,
 				E91486712B93AB3000F266A5 /* ViewController.swift in Sources */,
 				E914866D2B93AB3000F266A5 /* AppDelegate.swift in Sources */,
 				E914866F2B93AB3000F266A5 /* SceneDelegate.swift in Sources */,
@@ -297,14 +355,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E91486722B93AB3000F266A5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E91486732B93AB3000F266A5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E91486772B93AB3200F266A5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -440,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoffeeWeather/CoffeeWeather.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3S27C22PSM;
@@ -447,7 +498,6 @@
 				INFOPLIST_FILE = CoffeeWeather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,6 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoffeeWeather/CoffeeWeather.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3S27C22PSM;
@@ -475,7 +526,6 @@
 				INFOPLIST_FILE = CoffeeWeather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

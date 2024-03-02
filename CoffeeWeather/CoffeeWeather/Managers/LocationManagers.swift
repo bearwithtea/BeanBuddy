@@ -11,5 +11,4 @@ import Foundation
 final class LocationManagers: NSObject {
     static let shared = LocationManagers()
     
-    private override init() {}
 }

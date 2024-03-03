@@ -93,8 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				E914866B2B93AB3000F266A5 /* CoffeeWeather */,
-				E914869C2B93AB4D00F266A5 /* CoffeeWeather.entitlements */,
-				E914867A2B93AB3200F266A5 /* Info.plist */,
 				E91486822B93AB3300F266A5 /* CoffeeWeatherTests */,
 				E914868C2B93AB3300F266A5 /* CoffeeWeatherUITests */,
 				E914866A2B93AB3000F266A5 /* Products */,
@@ -114,6 +112,8 @@
 		E914866B2B93AB3000F266A5 /* CoffeeWeather */ = {
 			isa = PBXGroup;
 			children = (
+				E914867A2B93AB3200F266A5 /* Info.plist */,
+				E914869C2B93AB4D00F266A5 /* CoffeeWeather.entitlements */,
 				E91486A22B93B0D300F266A5 /* Managers */,
 				E91486A12B93B05800F266A5 /* Resources */,
 				E91486A02B93B05000F266A5 /* Controllers */,

@@ -20,6 +20,8 @@ class WeatherViewController: UIViewController {
     private func getLocation() {
         LocationManagers.shared.getCurrentLocation { location in
             print(String(describing: location))
+            
+            WeatherManager.shared.getWeather(for: location)
         }
     }
         

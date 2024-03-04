@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E913CC3E2B964452003CD929 /* SettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E913CC3D2B964452003CD929 /* SettingsViewViewModel.swift */; };
 		E914866D2B93AB3000F266A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E914866C2B93AB3000F266A5 /* AppDelegate.swift */; };
 		E914866F2B93AB3000F266A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E914866E2B93AB3000F266A5 /* SceneDelegate.swift */; };
 		E91486712B93AB3000F266A5 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91486702B93AB3000F266A5 /* WeatherViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E913CC3D2B964452003CD929 /* SettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewViewModel.swift; sourceTree = "<group>"; };
 		E91486692B93AB3000F266A5 /* CoffeeWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E914866C2B93AB3000F266A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E914866E2B93AB3000F266A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			children = (
 				E92DD2A52B93BBE60061BCAD /* CurrentWeatherView.swift */,
 				E92DD2A72B93BC280061BCAD /* SettingsView.swift */,
+				E913CC3D2B964452003CD929 /* SettingsViewViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				E92DD2A62B93BBE60061BCAD /* CurrentWeatherView.swift in Sources */,
 				E91486AA2B93B2BC00F266A5 /* SettingsViewController.swift in Sources */,
 				E92DD2A82B93BC280061BCAD /* SettingsView.swift in Sources */,
+				E913CC3E2B964452003CD929 /* SettingsViewViewModel.swift in Sources */,
 				E91486A62B93B10600F266A5 /* IAPManager.swift in Sources */,
 				E91486712B93AB3000F266A5 /* WeatherViewController.swift in Sources */,
 				E914866D2B93AB3000F266A5 /* AppDelegate.swift in Sources */,

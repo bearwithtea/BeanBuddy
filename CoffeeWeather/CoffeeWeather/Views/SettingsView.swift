@@ -9,7 +9,11 @@ import UIKit
 
 final class SettingsView: UIView, UITableViewDelegate, UITableViewDataSource {
     
-    private let viewModel: SettingsViewViewModel
+    private var viewModel: SettingsViewViewModel? {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     private let tableView: UITableView = {
         let table = UITableView()
@@ -43,7 +47,7 @@ final class SettingsView: UIView, UITableViewDelegate, UITableViewDataSource {
     //MARK: - Table
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return viewModel?.option.count ?? 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)

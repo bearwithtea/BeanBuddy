@@ -8,10 +8,10 @@
 import Foundation
 
 struct SettingsViewViewModel {
-    let option: [SettingOption]
+    let options: [SettingOption]
 }
 
-enum SettingOption {
+enum SettingOption: CaseIterable{
     case upgrade
     case privacy
     case terms

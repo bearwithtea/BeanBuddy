@@ -47,13 +47,16 @@ final class SettingsView: UIView, UITableViewDelegate, UITableViewDataSource {
     //MARK: - Table
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.option.count ?? 0
+        return viewModel?.options.count ?? 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Test"
+        if let viewModel {
+            cell.textLabel?.text = viewModel.options[indexPath.row].title
+        }
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }

@@ -18,11 +18,15 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        primaryView.delegate = self
         setUpView()
-        view.backgroundColor = .systemBackground
+        
         
         }
     private func setUpView() {
+        
+        view.backgroundColor = .systemBackground
+        
         view.addSubview(primaryView)
         NSLayoutConstraint.activate([
             primaryView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -30,5 +34,25 @@ class SettingsViewController: UIViewController {
             primaryView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
             primaryView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
+    }
+}
+
+extension SettingsViewController: SettingsViewDelegate {
+    func settingsView(_ settingsView: SettingsView, didTap option: SettingOption) {
+        print ("Handling...")
+        switch option {
+        case .upgrade:
+            break
+        case .privacy:
+            break
+        case .terms:
+            break
+        case .contact:
+            break
+        case .getHelp:
+            break
+        case .rateApp:
+            break
+        }
     }
 }

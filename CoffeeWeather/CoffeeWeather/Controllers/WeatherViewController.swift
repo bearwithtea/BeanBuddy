@@ -7,6 +7,8 @@
 
 import UIKit
 
+// singleton def https://en.wikipedia.org/wiki/Singleton_pattern
+
 class WeatherViewController: UIViewController {
     
     private let primaryView = CurrentWeatherView()
@@ -19,10 +21,13 @@ class WeatherViewController: UIViewController {
     
     private func getLocation() {
         LocationManagers.shared.getCurrentLocation { location in
-            print(String(describing: location))
-            
-            WeatherManager.shared.getWeather(for: location) {
-                
+            WeatherManager.shared.getWeather(for: location) { [weak self] in
+                DispatchQueue.main.async {
+                    self?.primaryView.reload()
+                    
+                    WeatherManager.shared.getWeather(for: location) {
+                    }
+                }
             }
         }
     }
